@@ -25,15 +25,11 @@ const gwiazda = add([
 onUpdate(()=>{
 
          
-    gwiazda.pos.x=gwiazda.pos.x+1
+   if(gwiazda.pos.x>0)
 
-    
-        
-    // if(gwiazda.pos.x>400)
-
-    // {
-    //     gwiazda.pos.x=550
-    // }
+    {
+         gwiazda.pos.x=gwiazda.pos.x-1
+    }
 
 onKeyPress("space",()=>(
     play("muzyka",{"volume": 0.1})
